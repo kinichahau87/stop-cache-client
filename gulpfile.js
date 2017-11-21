@@ -2,6 +2,7 @@
 var watch = require("gulp-watch");
 var beautify = require("gulp-beautify");
 var eslint = require('gulp-eslint');
+var gulp = require('gulp');
 
 gulp.task("lint", function(){
   return gulp.src("src/*.js")
