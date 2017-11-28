@@ -1,7 +1,7 @@
 var __redis = require('redis');
 
-var stopCacheClient = function() {
-	var client = __redis.createClient();
+var stopCacheClient = function(port, host) {
+	var client = (typeof port !== 'undefined' && typeof host !== 'undefined' ? __redis.createClient(port, host) : __redis.createClient());
 
 	this.defineOnError = function(aCallBack) {
 		client.on('error', function(err) {

@@ -1,6 +1,6 @@
 {
   "name": "stop-cache-client",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "stop cache client",
   "main": "src/stop_redis_cache.js",
   "scripts": {
